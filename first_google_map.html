@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> New York City Map</h1>
+<h3> displaying Astor Place Subway Station </h3>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(40.7128,-74.0060),
+  zoom:12,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({
+  position:{lat:40.7301,lng:-73.9908},
+  map:map,
+  animation:google.maps.Animation.BOUNCE
+});
+
+marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2vYSZ5Djb3xZvG_P3OvKvj12eTEg49Uc&callback=myMap">
+</script>
+
+</body>
+</html>
