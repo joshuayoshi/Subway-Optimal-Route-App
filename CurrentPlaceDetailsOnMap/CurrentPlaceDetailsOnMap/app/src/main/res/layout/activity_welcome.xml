@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/colton_duke_uexx0knnkjy_unsplash"
+    tools:context=".welcome">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="288dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:text="Explore"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColorHighlight="#9C27B0"
+            android:textColorHint="#9C27B0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="404dp"
+            android:layout_height="131dp"
+            android:background="@color/quantum_brown200"
+            android:text="Welcome to Our Subway App"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
